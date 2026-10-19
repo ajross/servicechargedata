@@ -7,7 +7,15 @@ For each FOI request the data has been received in slightly different formats an
 
 There are some anomalies with the charge values such as negative values, however since the council has supplied this data themselves we must trust that these were the values used for calculating charges.  Perhaps they represent a refund.
 
+## Sources
 
+- Resident-supplied records, documented in the individual year READMEs.
+- [2022–2023 FOI request](https://www.whatdotheyknow.com/request/actual_service_charge_costs_for).
+- [2023–2024 FOI request](https://www.whatdotheyknow.com/request/actual_service_charge_costs_for_5). The year README records that the data was ultimately supplied by email following escalation to the ICO.
+- [2024–2025 FOI request](https://www.whatdotheyknow.com/request/actual_service_charge_costs_for_10).
+- [2025–2026 FOI request](https://www.whatdotheyknow.com/request/actual_service_charge_costs_for_12).
+
+The year-specific READMEs describe the source and processing for each period. Original files, where retained, are stored under each year's `Original Data` directory.
 
 ## Annual service-charge files
 
