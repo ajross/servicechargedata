@@ -96,7 +96,7 @@ For calculating service charges per flat, Lambeth uses the rateable value of a f
 These are calculated as:
 
 `Block Service = Total_Block_Charge / Block_Rateable_Value * Property_Rateable Value`
-`Estate Service = Total_Estate_Charge / Block_Rateable_Value * Property_Rateable Value`
+`Estate Service = Total_Estate_Charge / Estate_Rateable_Value * Property_Rateable Value`
 
 ## Additional Charges
 
