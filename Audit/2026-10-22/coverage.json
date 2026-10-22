@@ -1,0 +1,112 @@
+{
+  "Lambeth/2015-2016/2015-2016.csv": {
+    "rows": 3,
+    "checks": 99,
+    "matched": 99,
+    "issues": 1
+  },
+  "Lambeth/2016-2017/2016-2017.csv": {
+    "rows": 2,
+    "checks": 66,
+    "matched": 66,
+    "issues": 1
+  },
+  "Lambeth/2017-2018/2017-2018.csv": {
+    "rows": 3,
+    "checks": 99,
+    "matched": 99,
+    "issues": 1
+  },
+  "Lambeth/2018-2019/2018-2019.csv": {
+    "rows": 3,
+    "checks": 99,
+    "matched": 99,
+    "issues": 1
+  },
+  "Lambeth/2019-2020/2019-2020.csv": {
+    "rows": 5,
+    "checks": 165,
+    "matched": 165,
+    "issues": 1
+  },
+  "Lambeth/2020-2021/2020-2021.csv": {
+    "rows": 6,
+    "checks": 198,
+    "matched": 198,
+    "issues": 1
+  },
+  "Lambeth/2021-2022/2021-2022.csv": {
+    "rows": 8,
+    "checks": 264,
+    "matched": 264,
+    "issues": 1
+  },
+  "Lambeth/2022-2023/2022-2023.csv": {
+    "rows": 1900,
+    "checks": 56529,
+    "matched": 56529,
+    "issues": 141
+  },
+  "Lambeth/2023-2024/2023-2024.csv": {
+    "rows": 2438,
+    "checks": 80454,
+    "matched": 80304,
+    "issues": 1042
+  },
+  "Lambeth/2024-2025/2024-2025.csv": {
+    "rows": 2107,
+    "checks": 69531,
+    "matched": 69531,
+    "issues": 764
+  },
+  "Lewisham/2022-2023/2022-2023.csv": {
+    "rows": 2652,
+    "checks": 112167,
+    "matched": 112167,
+    "issues": 0
+  },
+  "Southwark/2022-2023/2022-2023.csv": {
+    "rows": 2861,
+    "checks": 60081,
+    "matched": 60081,
+    "blank_to_zero": 2,
+    "issues": 61
+  },
+  "Tower Hamlets/2022-2023/2022-2023.csv": {
+    "rows": 874,
+    "checks": 33212,
+    "matched": 33212,
+    "excel_noise": 8246,
+    "blank_to_zero": 4666,
+    "issues": 0
+  },
+  "Tower Hamlets/2022-2023/mapsites.csv": {
+    "rows": 174,
+    "checks": 1740,
+    "matched": 1740,
+    "excel_noise": 574,
+    "blank_to_zero": 14,
+    "issues": 0
+  },
+  "Tower Hamlets/2023-2024/2023-2024.csv": {
+    "rows": 877,
+    "checks": 31572,
+    "matched": 31572,
+    "blank_to_zero": 4676,
+    "issues": 0
+  },
+  "Tower Hamlets/2023-2024/mapsites.csv": {
+    "rows": 176,
+    "checks": 1760,
+    "matched": 1760,
+    "blank_to_zero": 15,
+    "issues": 0
+  },
+  "Wandsworth/2023-2024/2023-2024.csv": {
+    "rows": 1954,
+    "checks": 41034,
+    "matched": 41034,
+    "blank_to_zero": 3,
+    "issues": 2
+  }
+}

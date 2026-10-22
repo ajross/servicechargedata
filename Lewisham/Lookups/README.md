@@ -12,7 +12,7 @@ The lookups preserve the council's original scheme and group codes in separate c
 - `Estate_ID` = trimmed `sc_schid`; `Estate_Name` = cleaned `sc_schname`.
 - `Block_ID` = trimmed original `sc_grpid`; `Block_Name` = cleaned `sc_grpdesc`.
 - Join annual records to the block lookup using both `Estate_ID` and `Block_ID`. For example, estate `BC` and block `BAYES1` identify one record.
-- Every distinct `sc_serv_desc` has a mapping in the service lookup. WINCL and WINDOW CLEANING both map to Window_Cleaning, with the two matching duplicate observations retained only once.
+- Services are represented by charge columns in the annual CSV. `WINCL` and `WINDOW CLEANING` both appear under `Window_Cleaning`, with the two matching duplicate observations retained only once.
 
 There are 2,546 distinct bare group codes but 2,652 estate/group pairs. `MGMT`, for example, is used under 51 schemes. Block_ID alone is not globally unique: use `(Estate_ID, Block_ID)` as the lookup key. Each lookup record references one estate; all lookup entries have annual data.
 
@@ -24,4 +24,4 @@ When adding future years, reuse these source-code pairs where supported by the i
 
 For example, Bayes Close 1–12, 1–24 and 2 + 4 are separate supplied groups carrying different services. Keep each group under its own ID. The three duplicate-description cases are documented in the year README; complementary services are retained separately and the potentially mislabelled EW / FIR26 record is flagged without guessing a corrected address.
 
-`WINCL` and `WINDOW CLEANING` are merged into the single `Window_Cleaning` annual column. Their two matching observations are treated as duplicate source errors; each amount is retained once. The service lookup preserves both original labels so future imports can recognise either spelling. See the borough and year READMEs for the evidence.
+`WINCL` and `WINDOW CLEANING` are merged into the single `Window_Cleaning` annual column. Their two matching observations are treated as duplicate source errors; each amount is retained once. Both original labels remain in the source attachment. See the borough and year READMEs for the evidence.

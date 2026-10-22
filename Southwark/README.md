@@ -15,7 +15,7 @@ Original files are available in each year's `Original Data` directory.
 
 Files are stored as `Southwark/YYYY-YYYY/YYYY-YYYY.csv`.
 
-Each row represents one block for one service-charge year. The 2022–2023 file contains **2,861 rows and 23 columns**: eight identification/weighting fields and 15 charge fields.
+Each row represents one block for one service-charge year. The 2022–2023 file contains **2,800 rows and 23 columns**: eight identification/weighting fields and 15 charge fields.
 
 Charges are in GBP, with two decimal places and no currency symbols or thousands separators. Negative amounts represent credits. Zero means no charge is recorded in the supplied data; it can also indicate that no estate charge record is available. A block absent from a file should not be interpreted as having zero charges.
 
@@ -34,7 +34,7 @@ Charges are in GBP, with two decimal places and no currency symbols or thousands
 
 These are bedroom-based units, not rateable values. The estate and block IDs are synthetic IDs created to link the records in the annual CSV. They were not supplied by Southwark Council and are not council invoice codes. The [lookups](Lookups/README.md) contain 2,861 blocks and 405 estate/group records.
 
-`SE000000`, named `Unassigned estate`, identifies five blocks with no established estate link. Their estate charges and weighting are unavailable. Fisher Estate has supplied estate charges but no estate weighting. These records do not support a weighted estate-share calculation.
+The annual file includes blocks whose names match the council’s block-to-estate list after ignoring case, spacing and punctuation. The lookups also contain entries absent from the annual file. A zero estate weighting means a weighted estate-share calculation is unavailable.
 
 ### Block charge columns
 

@@ -1,0 +1,18 @@
+{
+  "file": "Lambeth/2023-2024/2023-2024.csv",
+  "approved_changes": {
+    "ENBR2": {
+      "Estate_RV": 53176,
+      "rows": 43
+    },
+    "ENNL7": {
+      "Estate_RV": 107430,
+      "rows": 107
+    }
+  },
+  "before_sha256": "49ec3c320ecde4e582f7a0a758d7da12a10deff4d832f49aa9cef4d95a5be940",
+  "after_sha256": "bdaaa135da033818c90377bfbf46c0279e20d2e152122b7d1e7128e2f19e49c0",
+  "only_changed_field": "Estate_RV",
+  "changed_cells": 150,
+  "all_other_audit_input_hashes_unchanged": true
+}
