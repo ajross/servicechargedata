@@ -2,7 +2,7 @@
 
 Original: [Actuals22 23.csv](<Original Data/Actuals22 23.csv>), supplied with the [30 July 2024 FOI response](https://www.whatdotheyknow.com/request/actual_service_charge).
 
-The source has been pivoted into `2022-2023.csv` and estate/block/service lookup files. The original is unchanged. Record references below count the header as CSV record 1. Estate and block are output labels for source schemes and charging groups, respectively.
+The source is available as `2022-2023.csv` with estate and block lookup files; services are columns in the annual CSV. The original is unchanged. Record references below count the header as CSV record 1. Estate and block are output labels for source schemes and charging groups, respectively.
 
 The data has been cleaned of text padding and pivoted into one row per estate/block combination, with services as columns. Missing service records and the ten source `NULL` costs have been set to `0.00`. The two matching WINCL duplicates have been merged into `Window_Cleaning`, retaining each amount once.
 
@@ -44,7 +44,7 @@ At records **11753–11754**, WINCL repeats Window Cleaning exactly:
 | LG / JOHN2 | 8 | 7365 / 30.00 | 11753 / 30.00 |
 | LG / PAYN3 | 9 | 7925 / 27.00 | 11754 / 27.00 |
 
-The two WINCL records are treated as duplicate source errors and merged into `Window_Cleaning`. Each matching amount is retained once, and the separate `Wincl` column is removed. Both source labels map to the same annual column in the service lookup. This interpretation is supported by matching keys, descriptions, counts and costs. The **11,753 original observations become 11,751 distinct observations across 25 annual service columns**; both duplicate source records remain in the untouched original.
+The two WINCL records are treated as duplicate source errors and merged into `Window_Cleaning`. Each matching amount is retained once, and the separate `Wincl` column is removed. Both source labels appear under the same annual charge column. This interpretation is supported by matching keys, descriptions, counts and costs. The **11,753 original observations become 11,751 distinct observations across 25 annual service columns**; both duplicate source records remain in the untouched original.
 
 ## Insurance and management observations
 

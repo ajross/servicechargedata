@@ -1,6 +1,6 @@
 # Lewisham Data
 
-The service charge data for Lewisham was supplied by Lewisham Council in response to a Freedom of Information request. The 2022–23 data has been cleaned and pivoted into an annual CSV, with estate, block and service lookup files. The original attachment is unchanged.
+The service charge data for Lewisham was supplied by Lewisham Council in response to a Freedom of Information request. The 2022–23 data is available as an annual CSV, with estate and block lookup files. Services are represented by columns in the annual CSV. The original attachment is unchanged.
 
 The source scheme is represented as an estate and the source charging group as a block. Groups may cover a building, an address range, service-specific properties or an entire scheme.
 
@@ -48,7 +48,7 @@ Where a group has no source record for a service, the charge is set to `0.00`. T
 
 **Use both `Estate_ID` and `Block_ID` to identify or join a block record.** Block codes can repeat across estates: for example, Bayes Close (`BC`) and Brasted Close (`BD`) both use `MGMT`. Annual rows are unique by `(Year_Start, Year_End, Estate_ID, Block_ID)`.
 
-Names and codes have been cleaned of text padding. Counts remain in the annual file because they may change between years. No rateable values were supplied. See the [lookup README](Lookups/README.md) for the 54 estates, 2,652 blocks/groups and source-service mappings.
+Names and codes have been cleaned of text padding. Counts remain in the annual file because they may change between years. No rateable values were supplied. See the [lookup README](Lookups/README.md) for the 54 estates and 2,652 blocks/groups.
 
 ### Block charge columns
 
@@ -80,7 +80,7 @@ These contain the cost of each service for the supplied block or charging group.
 | `Technical_Repairs_Level_4` |
 | `Window_Cleaning` |
 
-`WINCL` has been merged into `Window_Cleaning`. Its two source observations exactly duplicate existing Window Cleaning amounts: estate `LG`, block `JOHN2` (30.00) and block `PAYN3` (27.00). Each amount is retained once. The service lookup maps 26 source labels to the 25 annual charge columns.
+`WINCL` has been merged into `Window_Cleaning`. Its two source observations exactly duplicate existing Window Cleaning amounts: estate `LG`, block `JOHN2` (30.00) and block `PAYN3` (27.00). Each amount is retained once. The 26 source service labels are represented by 25 annual charge columns.
 
 Reported zeros and the -554.41 Communal Lighting credit are preserved. All source service observations are retained except for consolidating the two matching WINCL duplicates. Detailed mappings and validation results are in the year README.
 
